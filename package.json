@@ -1,0 +1,25 @@
+{
+    "name": "vscode-kdl",
+    "displayName": "vscode-kdl",
+    "description": "syntax highlighting for kdl",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kdl",
+            "aliases": ["Kubernetes IDL", "kdl"],
+            "extensions": [".kdl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kdl",
+            "scopeName": "source.kdl",
+            "path": "./syntaxes/kdl.tmLanguage.json"
+        }]
+    }
+}
